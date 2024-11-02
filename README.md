@@ -254,12 +254,12 @@ local drop = Section:NewDropdown("Select Player!", "Click To Select", Plr, funct
    PlayerTP = t
 end)
 Section:NewButton("Click To TP", "", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
+    game.Workspcae.Character[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = game.Workspace.Character[PlayerTP].HumanoidRootPart.CFrame
 end)
 Section:NewToggle("Auto Tp", "", function(t)
 _G.TPPlayer = t
 while _G.TPPlayer do wait()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
+    game.Workspcae.Character[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = game.Workspace.Character[PlayerTP].HumanoidRootPart.CFrame
 end
 end)
 
